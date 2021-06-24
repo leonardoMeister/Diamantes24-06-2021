@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Diamantes24_06_2021
 {
-    public class Diamante
+    public class GeradorDima
     {
         Dictionary<char, string> dicionario = new Dictionary<char, string>()
             {
@@ -39,7 +36,7 @@ namespace Diamantes24_06_2021
             };
         string Letras = "abcdefghijklmnopqrstuvwxyz";
         string diamante = "";
-        public Diamante()
+        public GeradorDima()
         {
 
         }

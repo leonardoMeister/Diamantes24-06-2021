@@ -43,18 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Diamante.cs" />
+    <Compile Include="GeradorDima.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Diamante.Testes\Diamante.Testes.csproj">
-      <Project>{d36cac14-c24e-4d44-ae22-bdd7f588de8e}</Project>
-      <Name>Diamante.Testes</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dominio\" />

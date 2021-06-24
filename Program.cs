@@ -10,8 +10,14 @@ namespace Diamantes24_06_2021
     {
         static void Main(string[] args)
         {
-            Diamante aux = new Diamante();
+            GeradorDima aux = new GeradorDima();
+
+            string auxx = aux.GerarDima("z");
+
             Console.WriteLine(aux.GerarDima("c"));
+            Console.WriteLine(aux.GerarDima("a"));
+            Console.WriteLine(aux.GerarDima("d"));
+
         }
 
     }
