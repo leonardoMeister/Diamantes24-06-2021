@@ -12,11 +12,7 @@ namespace Diamantes24_06_2021
         {
             GeradorDima aux = new GeradorDima();
 
-            string auxx = aux.GerarDima("z");
-
-            Console.WriteLine(aux.GerarDima("c"));
-            Console.WriteLine(aux.GerarDima("a"));
-            Console.WriteLine(aux.GerarDima("d"));
+            Console.WriteLine(aux.GerarDiamante("g"));
 
         }
 

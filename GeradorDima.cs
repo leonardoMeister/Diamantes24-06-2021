@@ -34,43 +34,40 @@ namespace Diamantes24_06_2021
               {'y'," Y                                               Y\n"},
               {'z',"Z                                                 Z\n"},
             };
-        string Letras = "abcdefghijklmnopqrstuvwxyz";
-        string diamante = "";
+        string letrasAlfabeto = "abcdefghijklmnopqrstuvwxyz";
+        string textoDiamante = "";
         public GeradorDima()
         {
-
         }
 
-        public string GerarDima(string elemento)
+        public string GerarDiamante(string letraSelecionada)
         {
-            elemento = elemento.ToLower();
-            char auxElemento = elemento[0];
-
-            ConcatenarDima(auxElemento);
-            return diamante;
+            if (letraSelecionada.ToLower()[0] == 'a') return "False";
+            ConcatenarDiamante(letraSelecionada.ToLower()[0]);
+            
+            return textoDiamante;
         }
 
-        private void ConcatenarDima(char elemento)
+        private void ConcatenarDiamante(char letraSelecionada)
         {
-            for (int i = 0; i < Letras.Length; i++)
+            for (int i = 0; i < letrasAlfabeto.Length; i++)
             {
-                char x = Letras[i];
-                diamante += dicionario[x];
-                Console.WriteLine(diamante);
-                if (x == elemento)
+                char PosicaoLetrasAlfabeto = letrasAlfabeto[i];
+                textoDiamante += dicionario[PosicaoLetrasAlfabeto];
+                if (PosicaoLetrasAlfabeto == letraSelecionada)
                 {
-                    Letras = Letras.Substring(0, i);
-                    Letras = InverterString(Letras);
-                    ConcatenarDima(elemento);
+                    letrasAlfabeto = letrasAlfabeto.Substring(0, i);
+                    letrasAlfabeto = InverterString(letrasAlfabeto);
+                    ConcatenarDiamante(letraSelecionada);
                 }
             }
         }
 
-        private string InverterString(string auxLetras)
+        public string InverterString(string auxLetras)
         {
-            char[] arrChar = auxLetras.ToCharArray();
-            Array.Reverse(arrChar);
-            return new String(arrChar);
+            char[] arrayLetrasAlfabeto = auxLetras.ToCharArray();
+            Array.Reverse(arrayLetrasAlfabeto);
+            return new string(arrayLetrasAlfabeto);
         }
     }
 }
