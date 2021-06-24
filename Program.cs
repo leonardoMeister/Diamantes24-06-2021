@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Diamantes24_06_2021.Dominio;
 
 namespace Diamantes24_06_2021
 {
@@ -11,7 +10,7 @@ namespace Diamantes24_06_2021
     {
         static void Main(string[] args)
         {
-            GeradorDiamante aux = new GeradorDiamante();
+            Diamante aux = new Diamante();
             Console.WriteLine(aux.GerarDima("c"));
         }
 
